@@ -7,6 +7,15 @@ packages:
   gitUrl: https://github.com/Hariharan-SV-IBM
   gitUsername: Hariharan-SV-IBM
   gitBranch: main
+services:
+- serviceName: project.pro12.integrations:daf
+  packages:
+  - name: Pro12Project
+    version: "1.0"
+- serviceName: pub.date:getCurrentDate
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1071
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
